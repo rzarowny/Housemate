@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Housemate.PantryDb": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

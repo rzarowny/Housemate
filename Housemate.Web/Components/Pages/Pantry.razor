@@ -1,0 +1,73 @@
+﻿@page "/pantry"
+@attribute [StreamRendering(true)]
+
+@inject PantryServiceClient PantryService
+
+<PageTitle>Pantry Items</PageTitle>
+
+<header class="d-flex align-items-center justify-content-center">
+    <div class="flex-spacer"></div>
+    <h2 class="text-align-center">Pantry Items</h2>
+    <div class="flex-spacer"></div>
+</header>
+
+@if (pantry == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Size</th>
+                <th>Units</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in pantry.Data)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.PantryCategory.Category</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Size</td>
+                    <td>@item.Units</td>
+                    <td>@item.PantryLocation.Location</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+<AppFooter />
+
+@code {
+    PantryItemsPage? pantry;
+    PaginationInfo paginationInfo = new(FirstId: 0, NextId: 0, HasPreviousPage: false, HasNextPage: false);
+
+    [SupplyParameterFromQuery]
+    public int? Before { get; set; }
+
+    [SupplyParameterFromQuery]
+    public int? After { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        pantry = await PantryService.GetItemsAsync(Before, After);
+
+        if (pantry is null)
+        {
+            return;
+        }
+
+        paginationInfo = new PaginationInfo(pantry.FirstId, pantry.NextId, pantry.FirstId > 1, !pantry.IsLastPage);
+    }
+
+    record PaginationInfo(int FirstId, int NextId, bool HasPreviousPage, bool HasNextPage);
+}

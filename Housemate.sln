@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.AppHost", "Housemate.AppHost\Housemate.AppHost.csproj", "{3B44E8F4-B41E-474B-98E9-7C00638D20AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.ServiceDefaults", "Housemate.ServiceDefaults\Housemate.ServiceDefaults.csproj", "{7A8C6BF1-D61A-4ED9-B50A-B75CC35E321C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.Web", "Housemate.Web\Housemate.Web.csproj", "{C2A9DDDD-E1E3-4867-BB9C-8D785AFCE983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.Tests", "Housemate.Tests\Housemate.Tests.csproj", "{36457789-8FE6-4516-B19C-A8C17917DC65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.PantryService", "Housemate.PantryService\Housemate.PantryService.csproj", "{B9B00ED6-3400-4E78-AE11-7FAE6ACDFD97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.PantryDbManager", "Housemate.PantryDbManager\Housemate.PantryDbManager.csproj", "{BB445090-44BF-45E4-B6B8-F690C06BD2B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Housemate.PantryDb", "Housemate.PantryDb\Housemate.PantryDb.csproj", "{DCE552F7-30D9-4994-B584-AD8DC696228A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B44E8F4-B41E-474B-98E9-7C00638D20AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B44E8F4-B41E-474B-98E9-7C00638D20AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B44E8F4-B41E-474B-98E9-7C00638D20AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B44E8F4-B41E-474B-98E9-7C00638D20AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8C6BF1-D61A-4ED9-B50A-B75CC35E321C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8C6BF1-D61A-4ED9-B50A-B75CC35E321C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8C6BF1-D61A-4ED9-B50A-B75CC35E321C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8C6BF1-D61A-4ED9-B50A-B75CC35E321C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A9DDDD-E1E3-4867-BB9C-8D785AFCE983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A9DDDD-E1E3-4867-BB9C-8D785AFCE983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A9DDDD-E1E3-4867-BB9C-8D785AFCE983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A9DDDD-E1E3-4867-BB9C-8D785AFCE983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36457789-8FE6-4516-B19C-A8C17917DC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36457789-8FE6-4516-B19C-A8C17917DC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36457789-8FE6-4516-B19C-A8C17917DC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36457789-8FE6-4516-B19C-A8C17917DC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B00ED6-3400-4E78-AE11-7FAE6ACDFD97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B00ED6-3400-4E78-AE11-7FAE6ACDFD97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B00ED6-3400-4E78-AE11-7FAE6ACDFD97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B00ED6-3400-4E78-AE11-7FAE6ACDFD97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB445090-44BF-45E4-B6B8-F690C06BD2B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB445090-44BF-45E4-B6B8-F690C06BD2B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB445090-44BF-45E4-B6B8-F690C06BD2B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB445090-44BF-45E4-B6B8-F690C06BD2B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCE552F7-30D9-4994-B584-AD8DC696228A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE552F7-30D9-4994-B584-AD8DC696228A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE552F7-30D9-4994-B584-AD8DC696228A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE552F7-30D9-4994-B584-AD8DC696228A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

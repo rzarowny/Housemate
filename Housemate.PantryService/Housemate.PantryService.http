@@ -1,0 +1,12 @@
+@Housemate.PantryService_HostAddress = http://localhost:5088
+
+
+
+@pantryCategoryId=0
+GET {{Housemate.PantryService_HostAddress}}/api/v1/pantry/items/location/all/category/{pantryCategoryId:int}?pantryCategoryId={{pantryCategoryId}}
+
+###
+
+GET {{Housemate.PantryService_HostAddress}}/api/v1/pantry/items/location/all
+
+###
